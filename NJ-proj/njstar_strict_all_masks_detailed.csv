@@ -1,0 +1,26 @@
+pct_missing,replicate,status,reason,RMSE_all_pairs,RMSE_missing_only,runtime_seconds,completed_file
+30,1,OK,OK,0.012210457741340235,0.022118292921648335,0.00925685699985479,NJstar_STRICT_completed_p30_rep1.csv
+30,2,OK,OK,0.01670497440718284,0.03025975970874239,0.009027616999446764,NJstar_STRICT_completed_p30_rep2.csv
+30,3,OK,OK,0.00342435044933405,0.0062029440590353506,0.008552082999813138,NJstar_STRICT_completed_p30_rep3.csv
+30,4,OK,OK,0.002791647159485936,0.005056851341317537,0.009074589999727323,NJstar_STRICT_completed_p30_rep4.csv
+30,5,OK,OK,0.01619673441445698,0.029339122557233508,0.008757128000070225,NJstar_STRICT_completed_p30_rep5.csv
+50,1,OK,OK,0.02740187143705033,0.03893796066933977,0.006903937000060978,NJstar_STRICT_completed_p50_rep1.csv
+50,2,OK,OK,0.01847063723105026,0.026246709013743808,0.007137380000131088,NJstar_STRICT_completed_p50_rep2.csv
+50,3,FAIL,No eligible pair at r=3: need d_xy known and |S_xy|>=3.,,,0.0061294099996302975,
+50,4,OK,OK,0.01479191844068049,0.02101926285547519,0.013302792000104091,NJstar_STRICT_completed_p50_rep4.csv
+50,5,OK,OK,0.033480336107738165,0.047575437084807985,0.007100879000063287,NJstar_STRICT_completed_p50_rep5.csv
+65,1,OK,OK,0.02858365384931376,0.0355187715644894,0.005796371999167604,NJstar_STRICT_completed_p65_rep1.csv
+65,2,FAIL,No eligible pair at r=4: need d_xy known and |S_xy|>=3.,,,0.005181255000024976,
+65,3,FAIL,No eligible pair at r=3: need d_xy known and |S_xy|>=3.,,,0.00536802699934924,
+65,4,OK,OK,0.027365446930624288,0.03400499682136814,0.0059151170007680776,NJstar_STRICT_completed_p65_rep4.csv
+65,5,FAIL,No eligible pair at r=4: need d_xy known and |S_xy|>=3.,,,0.005311378000442346,
+85,1,FAIL,Known-distance graph is disconnected (2 components).,,,4.3836999793711584e-05,
+85,2,FAIL,Known-distance graph is disconnected (2 components).,,,3.6689000808109995e-05,
+85,3,FAIL,Known-distance graph is disconnected (2 components).,,,3.478899998299312e-05,
+85,4,FAIL,Known-distance graph is disconnected (2 components).,,,5.888299983780598e-05,
+85,5,FAIL,Known-distance graph is disconnected (2 components).,,,3.577899951778818e-05,
+90,1,FAIL,Known-distance graph is disconnected (5 components).,,,3.439400006755022e-05,
+90,2,FAIL,Known-distance graph is disconnected (4 components).,,,3.297100010968279e-05,
+90,3,FAIL,Known-distance graph is disconnected (5 components).,,,3.5614999433164485e-05,
+90,4,FAIL,Known-distance graph is disconnected (6 components).,,,3.225700038456125e-05,
+90,5,FAIL,Known-distance graph is disconnected (4 components).,,,3.210500017303275e-05,
