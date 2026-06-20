@@ -1,0 +1,24 @@
+{
+  "method": "NJstar-STRICT",
+  "reference_matrix_file": "Dref_synthetic30_additive_nonultrametric_Tlabels.csv",
+  "n_taxa": 30,
+  "n_pairs_lower_triangle": 435,
+  "n_triplets": 4060,
+  "missing_fracs": [
+    0.3,
+    0.5,
+    0.65,
+    0.85
+  ],
+  "reps": 5,
+  "base_seed": 55,
+  "s_top": 15,
+  "preserve_observed": true,
+  "output_root": "njstar_strict_outputs",
+  "detailed_csv": "njstar_strict_outputs/tables/njstar_strict_all_masks_detailed.csv",
+  "summary_numeric_csv": "njstar_strict_outputs/tables/njstar_strict_summary_numeric_by_missingness.csv",
+  "summary_formatted_csv": "njstar_strict_outputs/tables/njstar_strict_summary_formatted_by_missingness.csv",
+  "Delta_original": 2094.9481216356535,
+  "Delta_normalized_original": 0.06362992423130975,
+  "optimized_variables_definition": "0 because STRICT NJ* is constructive, not a continuous optimizer; see imputed_variables and tree_edges_final."
+}

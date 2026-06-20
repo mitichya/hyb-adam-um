@@ -1,0 +1,46 @@
+% Requires: \usepackage{booktabs,multirow,rotating}
+% Recommended macro: \newcommand{\best}[1]{\textbf{#1}}
+\begin{sidewaystable}[t]
+\caption{Combined matrix-, topology-, and ML-branch-length performance on $15\times 15$ mtDNA distance matrices. Matrix errors are computed only on artificially hidden entries. RMSE/MAE, NJ-vs-ML patristic RMSE, and branch-length RMSE are reported as $\times 10^{-2}$. Lower is better for RMSE/MAE, $\overline{\Delta}(\widehat D)$, runtime, RF$_{\mathrm{norm}}$, NJ-vs-ML patristic RMSE, and branch-length RMSE; higher is better for correlations. Best values within each missingness level are in bold.}
+\label{tab:combined_main_results}
+\centering
+\tiny
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{llccccccccccc}
+\toprule
+& & \multicolumn{6}{c}{Matrix metrics} & \multicolumn{5}{c}{Tree / branch-length metrics} \\
+\cmidrule(lr){3-8}\cmidrule(lr){9-13}
+$p$ & Method & RMSE & MAE & Pear. & Spear. & $\overline{\Delta}(\widehat D)$ & Time(s) & RF$_{\mathrm{norm}}$ & NJ pat.\ RMSE & NJ pat.\ Spear. & edge BL RMSE & Succ. \\
+\midrule
+\multirow{6}{*}{30\%} & Hyb-Adam-UM+impr & 1.53 $\pm$ 0.87 & 0.61 $\pm$ 0.37 & 0.90 $\pm$ 0.10 & 0.86 $\pm$ 0.13 & \best{0.02 $\pm$ $<0.01$} & 88.43 $\pm$ 1.81 & 0.28 $\pm$ 0.11 & \best{15.37 $\pm$ 0.03} & 0.92 $\pm$ 0.03 & 3.53 $\pm$ 0.20 & 30/N/A \\
+ & MW$^\star$-proj & 1.19 $\pm$ 0.83 & \best{0.45 $\pm$ 0.33} & 0.93 $\pm$ 0.08 & 0.91 $\pm$ 0.08 & 0.02 $\pm$ $<0.01$ & 15.74 $\pm$ 1.64 & \best{0.26 $\pm$ 0.11} & 15.38 $\pm$ $<0.01$ & \best{0.93 $\pm$ 0.02} & 3.52 $\pm$ 0.20 & 30/N/A \\
+ & NJ$^\star$-proj & 2.13 $\pm$ 1.19 & 1.15 $\pm$ 0.86 & 0.82 $\pm$ 0.17 & 0.71 $\pm$ 0.26 & 0.04 $\pm$ 0.03 & 0.01 $\pm$ 0.00 & 0.38 $\pm$ 0.17 & 15.43 $\pm$ 0.22 & 0.87 $\pm$ 0.07 & 3.59 $\pm$ 0.25 & 29/30 \\
+ & FastME-proj & \best{1.02 $\pm$ 0.92} & 0.46 $\pm$ 0.36 & \best{0.95 $\pm$ 0.09} & \best{0.94 $\pm$ 0.08} & 0.03 $\pm$ 0.01 & \best{$<0.01$ $\pm$ 0.00} & 0.29 $\pm$ 0.15 & 15.40 $\pm$ 0.10 & 0.93 $\pm$ 0.03 & \best{3.41 $\pm$ 0.23} & 30/N/A \\
+ & LRMC & 5.09 $\pm$ 0.55 & 4.21 $\pm$ 0.51 & 0.60 $\pm$ 0.16 & 0.51 $\pm$ 0.21 & 0.13 $\pm$ $<0.01$ & 0.03 $\pm$ 0.01 & 0.68 $\pm$ 0.14 & 16.79 $\pm$ 0.31 & 0.73 $\pm$ 0.08 & 3.87 $\pm$ 0.30 & 30/30 \\
+ & KNN-impute & 3.14 $\pm$ 0.33 & 2.45 $\pm$ 0.28 & 0.87 $\pm$ 0.05 & 0.76 $\pm$ 0.12 & N/A & 0.13 $\pm$ 0.72 & 0.49 $\pm$ 0.13 & 16.09 $\pm$ 0.17 & 0.88 $\pm$ 0.05 & 3.79 $\pm$ 0.35 & 30/30 \\
+\midrule
+\multirow{6}{*}{50\%} & Hyb-Adam-UM+impr & 2.30 $\pm$ 1.11 & 1.15 $\pm$ 0.90 & 0.78 $\pm$ 0.21 & 0.76 $\pm$ 0.18 & 0.02 $\pm$ 0.02 & 139.48 $\pm$ 1.24 & 0.45 $\pm$ 0.14 & 15.50 $\pm$ 0.31 & 0.87 $\pm$ 0.07 & 3.78 $\pm$ 0.29 & 30/N/A \\
+ & MW$^\star$-proj & \best{1.59 $\pm$ 0.86} & \best{0.64 $\pm$ 0.42} & \best{0.90 $\pm$ 0.08} & \best{0.88 $\pm$ 0.07} & \best{0.02 $\pm$ $<0.01$} & 14.35 $\pm$ 2.11 & \best{0.39 $\pm$ 0.13} & 15.40 $\pm$ 0.04 & \best{0.91 $\pm$ 0.03} & 3.70 $\pm$ 0.27 & 30/N/A \\
+ & NJ$^\star$-proj & 2.53 $\pm$ 1.24 & 1.37 $\pm$ 1.04 & 0.78 $\pm$ 0.16 & 0.72 $\pm$ 0.22 & 0.06 $\pm$ 0.04 & 0.01 $\pm$ 0.00 & 0.53 $\pm$ 0.16 & \best{15.37 $\pm$ 0.43} & 0.81 $\pm$ 0.12 & 3.82 $\pm$ 0.32 & 22/30 \\
+ & FastME-proj & 1.93 $\pm$ 1.21 & 0.84 $\pm$ 0.55 & 0.85 $\pm$ 0.15 & 0.85 $\pm$ 0.12 & 0.04 $\pm$ 0.03 & $<0.01$ $\pm$ 0.00 & 0.46 $\pm$ 0.14 & 15.60 $\pm$ 0.28 & 0.88 $\pm$ 0.06 & \best{3.66 $\pm$ 0.43} & 30/N/A \\
+ & LRMC & 5.89 $\pm$ 0.56 & 4.94 $\pm$ 0.51 & 0.46 $\pm$ 0.16 & 0.37 $\pm$ 0.17 & 0.19 $\pm$ 0.01 & 0.04 $\pm$ 0.05 & 0.83 $\pm$ 0.10 & 18.08 $\pm$ 0.45 & 0.55 $\pm$ 0.15 & 4.30 $\pm$ 0.32 & 30/30 \\
+ & KNN-impute & 3.56 $\pm$ 0.39 & 2.80 $\pm$ 0.38 & 0.81 $\pm$ 0.05 & 0.73 $\pm$ 0.11 & N/A & \best{$<0.01$ $\pm$ $<0.01$} & 0.52 $\pm$ 0.15 & 16.72 $\pm$ 0.30 & 0.82 $\pm$ 0.06 & 4.06 $\pm$ 0.31 & 30/30 \\
+\midrule
+\multirow{6}{*}{65\%} & Hyb-Adam-UM+impr & 2.74 $\pm$ 0.92 & 1.24 $\pm$ 0.51 & 0.73 $\pm$ 0.13 & \best{0.79 $\pm$ 0.06} & \best{$<0.01$ $\pm$ $<0.01$} & 181.03 $\pm$ 1.41 & \best{0.59 $\pm$ 0.13} & \best{15.46 $\pm$ 0.09} & \best{0.84 $\pm$ 0.05} & 4.03 $\pm$ 0.28 & 30/N/A \\
+ & MW$^\star$-proj & \best{2.66 $\pm$ 0.95} & \best{1.24 $\pm$ 0.56} & \best{0.74 $\pm$ 0.15} & 0.76 $\pm$ 0.11 & 0.02 $\pm$ 0.02 & 14.96 $\pm$ 1.90 & 0.60 $\pm$ 0.16 & 15.47 $\pm$ 0.16 & 0.83 $\pm$ 0.07 & \best{4.00 $\pm$ 0.27} & 30/N/A \\
+ & NJ$^\star$-proj & 4.11 $\pm$ 1.03 & 2.66 $\pm$ 1.07 & 0.47 $\pm$ 0.22 & 0.51 $\pm$ 0.24 & 0.07 $\pm$ 0.04 & 0.01 $\pm$ 0.00 & 0.84 $\pm$ 0.12 & 15.56 $\pm$ 0.44 & 0.64 $\pm$ 0.18 & 4.38 $\pm$ 0.28 & 8/30 \\
+ & FastME-proj & 3.11 $\pm$ 0.82 & 1.49 $\pm$ 0.54 & 0.65 $\pm$ 0.14 & 0.77 $\pm$ 0.10 & 0.06 $\pm$ 0.04 & $<0.01$ $\pm$ 0.00 & 0.69 $\pm$ 0.13 & 15.92 $\pm$ 0.40 & 0.82 $\pm$ 0.06 & 4.03 $\pm$ 0.49 & 30/N/A \\
+ & LRMC & 7.01 $\pm$ 0.65 & 5.98 $\pm$ 0.63 & 0.30 $\pm$ 0.14 & 0.26 $\pm$ 0.16 & 0.24 $\pm$ 0.04 & 0.06 $\pm$ 0.05 & 0.94 $\pm$ 0.11 & 19.57 $\pm$ 0.60 & 0.37 $\pm$ 0.14 & 4.64 $\pm$ 0.32 & 30/30 \\
+ & KNN-impute & 4.60 $\pm$ 0.45 & 3.66 $\pm$ 0.42 & 0.63 $\pm$ 0.10 & 0.58 $\pm$ 0.12 & N/A & \best{$<0.01$ $\pm$ $<0.01$} & 0.69 $\pm$ 0.14 & 17.61 $\pm$ 0.44 & 0.71 $\pm$ 0.10 & 4.36 $\pm$ 0.36 & 30/30 \\
+\midrule
+\multirow{6}{*}{85\%} & Hyb-Adam-UM+impr & \best{4.11 $\pm$ 0.75} & \best{2.43 $\pm$ 0.66} & \best{0.34 $\pm$ 0.21} & \best{0.35 $\pm$ 0.28} & \best{$<0.01$ $\pm$ $<0.01$} & 237.86 $\pm$ 2.01 & \best{0.86 $\pm$ 0.13} & \best{15.47 $\pm$ 0.38} & \best{0.42 $\pm$ 0.27} & \best{4.58 $\pm$ 0.24} & 30/N/A \\
+ & MW$^\star$-proj & 4.43 $\pm$ 0.73 & 2.80 $\pm$ 0.65 & 0.26 $\pm$ 0.19 & 0.33 $\pm$ 0.21 & 0.06 $\pm$ 0.04 & 14.84 $\pm$ 5.00 & 0.89 $\pm$ 0.10 & 15.97 $\pm$ 0.67 & 0.39 $\pm$ 0.21 & 4.60 $\pm$ 0.30 & 30/N/A \\
+ & NJ$^\star$-proj & N/A & N/A & N/A & N/A & N/A & N/A & N/A & N/A & N/A & N/A & 0/30 \\
+ & FastME-proj & 5.55 $\pm$ 0.99 & 4.01 $\pm$ 0.93 & 0.18 $\pm$ 0.18 & 0.25 $\pm$ 0.22 & 0.19 $\pm$ 0.06 & $<0.01$ $\pm$ $<0.01$ & 0.91 $\pm$ 0.09 & 17.88 $\pm$ 1.04 & 0.32 $\pm$ 0.21 & 4.88 $\pm$ 0.47 & 30/N/A \\
+ & LRMC & 10.14 $\pm$ 0.92 & 9.05 $\pm$ 1.01 & 0.09 $\pm$ 0.14 & 0.09 $\pm$ 0.16 & 0.46 $\pm$ 0.13 & 0.12 $\pm$ 0.07 & 0.98 $\pm$ 0.04 & 23.56 $\pm$ 0.91 & 0.14 $\pm$ 0.17 & 5.31 $\pm$ 0.28 & 30/30 \\
+ & KNN-impute & 6.97 $\pm$ 0.47 & 5.89 $\pm$ 0.48 & 0.20 $\pm$ 0.13 & 0.23 $\pm$ 0.14 & N/A & \best{$<0.01$ $\pm$ $<0.01$} & 0.95 $\pm$ 0.06 & 20.54 $\pm$ 0.64 & 0.29 $\pm$ 0.16 & 4.84 $\pm$ 0.31 & 30/30 \\
+\bottomrule
+\end{tabular}
+\vspace{2pt}
+\parbox{\textwidth}{\scriptsize Succ. denotes successful runs over total runs when available. NJ patristic RMSE/Spearman compare pairwise leaf-to-leaf patristic distances between the NJ tree reconstructed from the completed matrix and the reference ML tree. No fixed-ML-topology fitted-patristic values are used as fallback in these main columns. edge BL RMSE is taken from the ML-topology branch-length comparison. N/A indicates that the corresponding summary file or metric column was not available.}
+\end{sidewaystable}

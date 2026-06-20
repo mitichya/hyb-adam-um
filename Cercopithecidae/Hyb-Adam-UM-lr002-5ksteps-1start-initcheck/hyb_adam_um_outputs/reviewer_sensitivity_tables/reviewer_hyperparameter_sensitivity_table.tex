@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\caption{Hyperparameter sensitivity of Hyb-Adam-UM at the fixed sensitivity missingness level. All variants are evaluated on the same frozen masks; only the indicated optimizer hyperparameter group is changed. Matrix errors are computed only on artificially hidden entries. Values are mean $\pm$ standard deviation. RMSE and MAE are reported as $\times 10^{-2}$.}
+\label{tab:hyb_hyperparameter_sensitivity}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccc}
+\toprule
+Variant & RMSE$_{\rm miss}$ ($\times 10^{-2}$) & MAE$_{\rm miss}$ ($\times 10^{-2}$) & Final $\Delta$ & Time (s) & Success \\
+\midrule
+Baseline & 1.34 $\pm$ 0.74 & 0.51 $\pm$ 0.21 & 25.74 $\pm$ 3.48 & 37.84 $\pm$ 0.17 & 5/5 \\
+Low initial LR & 1.81 $\pm$ 0.71 & 0.68 $\pm$ 0.23 & 27.57 $\pm$ 8.02 & 36.94 $\pm$ 0.12 & 5/5 \\
+High initial LR & 1.76 $\pm$ 0.64 & 0.66 $\pm$ 0.18 & 36.44 $\pm$ 13.94 & 36.79 $\pm$ 0.23 & 5/5 \\
+Fast LR decay & 1.35 $\pm$ 0.74 & 0.51 $\pm$ 0.21 & 25.64 $\pm$ 3.22 & 36.31 $\pm$ 0.12 & 5/5 \\
+Slow LR decay & 1.34 $\pm$ 0.73 & 0.52 $\pm$ 0.20 & 28.38 $\pm$ 4.33 & 36.44 $\pm$ 0.29 & 5/5 \\
+Clip = 1 & 1.34 $\pm$ 0.74 & 0.51 $\pm$ 0.21 & 25.99 $\pm$ 3.35 & 36.76 $\pm$ 0.07 & 5/5 \\
+Clip = 10 & 1.66 $\pm$ 0.54 & 0.59 $\pm$ 0.12 & 27.65 $\pm$ 5.61 & 36.64 $\pm$ 0.12 & 5/5 \\
+No clipping & 3.08 $\pm$ 0.73 & 2.03 $\pm$ 0.78 & 230.75 $\pm$ 116.85 & 36.25 $\pm$ 0.40 & 5/5 \\
+FD step $5\cdot 10^{-6}$ & 1.34 $\pm$ 0.74 & 0.52 $\pm$ 0.21 & 25.86 $\pm$ 3.33 & 36.12 $\pm$ 0.11 & 5/5 \\
+FD step $10^{-4}$ & 1.34 $\pm$ 0.74 & 0.51 $\pm$ 0.21 & 24.87 $\pm$ 3.38 & 36.55 $\pm$ 0.19 & 5/5 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

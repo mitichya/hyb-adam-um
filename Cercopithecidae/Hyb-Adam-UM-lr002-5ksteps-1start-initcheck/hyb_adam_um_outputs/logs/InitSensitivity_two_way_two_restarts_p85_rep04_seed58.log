@@ -1,0 +1,34 @@
+Hyb-Adam-UM optimizer log
+{"epochs": 5000, "print_every": 500, "lr_init": 0.02, "lr_milestones": [700, 2000, 4000], "lr_factor": 0.5, "lr_min": 0.0001, "sched_patience_blocks": 7, "weight_decay": 0.0, "clip_grad_norm": 5.0, "h_central_diff": 1e-05, "beta1": 0.9, "beta2": 0.999, "adam_eps": 1e-08, "seed_hyb": 42, "init_strategy": "two_way_mean", "n_restarts": 2, "restart_jitter_scale": 0.03, "max_distance_factor": 1.5, "normalize_objective_by_triplets": true, "convergence_rel_tol": 1e-07, "convergence_patience_checks": 5, "early_stop": false}
+Initial strategy=two_way_mean; restarts=2; upper_bound=0.23064958828911242; optimized_variables=89; normalize_objective_by_triplets=True
+Restart 0: initial Delta=182.182850; objective_for_grad=0.40040187
+Restart 0, epoch     1 | Delta=357.046105 | best Delta=182.182850 | obj=0.78471671 | lr=0.02
+Restart 0, epoch   500 | Delta=33.742030 | best Delta=33.742030 | obj=0.074158308 | lr=0.02
+Restart 0, epoch 00700: lr milestone 0.02 -> 0.01
+Restart 0, epoch  1000 | Delta=14.922773 | best Delta=14.922773 | obj=0.032797303 | lr=0.01
+Restart 0, epoch  1500 | Delta=16.007800 | best Delta=14.922773 | obj=0.035181977 | lr=0.01
+Restart 0, epoch 02000: lr milestone 0.01 -> 0.005
+Restart 0, epoch  2000 | Delta=15.116363 | best Delta=14.922773 | obj=0.033222775 | lr=0.005
+Restart 0, epoch  2500 | Delta=7.591736 | best Delta=7.591736 | obj=0.016685133 | lr=0.005
+Restart 0, epoch  3000 | Delta=8.551410 | best Delta=7.591736 | obj=0.018794308 | lr=0.005
+Restart 0, epoch  3500 | Delta=7.352178 | best Delta=7.352178 | obj=0.016158633 | lr=0.005
+Restart 0, epoch 04000: lr milestone 0.005 -> 0.0025
+Restart 0, epoch  4000 | Delta=8.814040 | best Delta=7.352178 | obj=0.019371516 | lr=0.0025
+Restart 0, epoch  4500 | Delta=4.411441 | best Delta=4.411441 | obj=0.0096954754 | lr=0.0025
+Restart 0, epoch  5000 | Delta=4.723415 | best Delta=4.411441 | obj=0.010381131 | lr=0.0025
+Restart 1: initial Delta=170.427280; objective_for_grad=0.37456545
+Restart 1, epoch     1 | Delta=401.018537 | best Delta=170.427280 | obj=0.88135942 | lr=0.02
+Restart 1, epoch   500 | Delta=32.155278 | best Delta=32.155278 | obj=0.070670942 | lr=0.02
+Restart 1, epoch 00700: lr milestone 0.02 -> 0.01
+Restart 1, epoch  1000 | Delta=16.241760 | best Delta=16.241760 | obj=0.035696175 | lr=0.01
+Restart 1, epoch  1500 | Delta=16.203931 | best Delta=16.203931 | obj=0.035613036 | lr=0.01
+Restart 1, epoch 02000: lr milestone 0.01 -> 0.005
+Restart 1, epoch  2000 | Delta=19.033924 | best Delta=16.203931 | obj=0.0418328 | lr=0.005
+Restart 1, epoch  2500 | Delta=11.309796 | best Delta=11.309796 | obj=0.024856694 | lr=0.005
+Restart 1, epoch  3000 | Delta=13.218350 | best Delta=11.309796 | obj=0.029051318 | lr=0.005
+Restart 1, epoch  3500 | Delta=11.968091 | best Delta=11.309796 | obj=0.026303497 | lr=0.005
+Restart 1, epoch 04000: lr milestone 0.005 -> 0.0025
+Restart 1, epoch  4000 | Delta=11.756984 | best Delta=11.309796 | obj=0.025839526 | lr=0.0025
+Restart 1, epoch  4500 | Delta=8.415752 | best Delta=8.415752 | obj=0.018496157 | lr=0.0025
+Restart 1, epoch  5000 | Delta=8.217088 | best Delta=8.217088 | obj=0.018059533 | lr=0.0025
+Selected restart 0 with final Delta=4.411441; reduction=97.578564%; best_epoch=4500; epochs_used=5000; final_lr=0.0025

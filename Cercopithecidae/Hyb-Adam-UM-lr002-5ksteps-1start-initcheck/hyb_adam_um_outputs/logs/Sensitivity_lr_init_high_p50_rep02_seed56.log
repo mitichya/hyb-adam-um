@@ -1,0 +1,19 @@
+Hyb-Adam-UM optimizer log
+{"epochs": 5000, "print_every": 500, "lr_init": 0.04, "lr_milestones": [700, 2000, 4000], "lr_factor": 0.5, "lr_min": 0.0001, "sched_patience_blocks": 7, "weight_decay": 0.0, "clip_grad_norm": 5.0, "h_central_diff": 1e-05, "beta1": 0.9, "beta2": 0.999, "adam_eps": 1e-08, "seed_hyb": 42, "init_strategy": "two_way_mean", "n_restarts": 1, "restart_jitter_scale": 0.03, "max_distance_factor": 1.5, "normalize_objective_by_triplets": true, "convergence_rel_tol": 1e-07, "convergence_patience_checks": 5, "early_stop": false}
+Initial strategy=two_way_mean; restarts=1; upper_bound=0.23388963332927265; optimized_variables=52; normalize_objective_by_triplets=True
+Restart 0: initial Delta=319.221908; objective_for_grad=0.70158661
+Restart 0, epoch     1 | Delta=530.796769 | best Delta=319.221908 | obj=1.1665863 | lr=0.04
+Restart 0, epoch   500 | Delta=802.409101 | best Delta=319.221908 | obj=1.7635365 | lr=0.04
+Restart 0, epoch 00700: lr milestone 0.04 -> 0.02
+Restart 0, epoch  1000 | Delta=88.981791 | best Delta=88.981791 | obj=0.19556438 | lr=0.02
+Restart 0, epoch  1500 | Delta=105.306262 | best Delta=88.981791 | obj=0.23144233 | lr=0.02
+Restart 0, epoch 02000: lr milestone 0.02 -> 0.01
+Restart 0, epoch  2000 | Delta=99.538297 | best Delta=88.981791 | obj=0.21876549 | lr=0.01
+Restart 0, epoch  2500 | Delta=73.256727 | best Delta=73.256727 | obj=0.1610038 | lr=0.01
+Restart 0, epoch  3000 | Delta=74.023541 | best Delta=73.256727 | obj=0.1626891 | lr=0.01
+Restart 0, epoch  3500 | Delta=76.557907 | best Delta=73.256727 | obj=0.16825914 | lr=0.01
+Restart 0, epoch 04000: lr milestone 0.01 -> 0.005
+Restart 0, epoch  4000 | Delta=64.159816 | best Delta=64.159816 | obj=0.14101058 | lr=0.005
+Restart 0, epoch  4500 | Delta=58.932417 | best Delta=58.932417 | obj=0.1295218 | lr=0.005
+Restart 0, epoch  5000 | Delta=65.038392 | best Delta=58.932417 | obj=0.14294152 | lr=0.005
+Selected restart 0 with final Delta=58.932417; reduction=81.538731%; best_epoch=4500; epochs_used=5000; final_lr=0.005

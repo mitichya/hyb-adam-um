@@ -1,0 +1,30 @@
+{
+  "method": "LRMC-SoftImpute",
+  "used_reference_matrix": "Dref_MAFFT_pairwise_deletion_pdistance_Tlabels.csv",
+  "n": 15,
+  "missing_fracs": [
+    0.3,
+    0.5,
+    0.65,
+    0.85
+  ],
+  "reps": 30,
+  "base_seed": 55,
+  "missing_value": -1.0,
+  "softimpute_config": {
+    "tau": 0.02,
+    "max_iters": 6000,
+    "tol": 1e-07,
+    "rank": null,
+    "svd_backend": "numpy_full",
+    "enforce_nonneg_final": true,
+    "seed_lrmc": 0
+  },
+  "outputs": {
+    "masked_dir": "lrmc_softimpute_outputs/masked_matrices",
+    "completed_dir": "lrmc_softimpute_outputs/completed_matrices",
+    "detail_csv": "lrmc_softimpute_outputs/tables/lrmc_softimpute_all_masks_detailed.csv",
+    "summary_numeric_csv": "lrmc_softimpute_outputs/tables/lrmc_softimpute_summary_numeric_by_missingness.csv",
+    "summary_formatted_csv": "lrmc_softimpute_outputs/tables/lrmc_softimpute_summary_formatted_by_missingness.csv"
+  }
+}

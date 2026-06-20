@@ -1,0 +1,248 @@
+IQ-TREE 2.0.7 built Jan 21 2022
+
+Input file name: mtDNA15_ML_tree/mtDNA15_aligned_mafft.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 97093
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 15 sequences with 17095 nucleotide sites
+Number of constant sites: 10960 (= 64.1123% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 10960 (= 64.1123% of all sites)
+Number of parsimony informative sites: 4256
+Number of distinct site patterns: 2795
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIM2+F+R5
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TIM2+F+R5        -75893.535  151869.070 +    0.439  151869.272 +    0.442  152186.678 +    0.435
+TPM2+F+R5        -75898.867  151877.734 -  0.00577  151877.927 -  0.00584  152187.596 +    0.275
+TPM2u+F+R5       -75898.867  151877.734 -  0.00577  151877.927 -  0.00584  152187.596 +    0.275
+TIM2+F+I+G4      -75926.914  151923.828 - 5.65e-13  151923.976 - 5.85e-13  152194.957 -  0.00692
+TPM2u+F+I+G4     -75932.237  151932.475 - 7.49e-15  151932.614 - 7.78e-15  152195.857 -  0.00441
+TPM2+F+I+G4      -75932.237  151932.475 - 7.49e-15  151932.614 - 7.78e-15  152195.857 -  0.00441
+GTR+F+R5         -75891.471  151868.941 +    0.469  151869.163 +    0.467  152202.042 -   0.0002
+TVM+F+R5         -75896.746  151877.493 -  0.00652  151877.705 -  0.00652  152202.847 - 0.000134
+GTR+F+I+G4       -75924.580  151923.159 -  7.9e-13  151923.324 -  8.1e-13  152209.781 - 4.18e-06
+TVM+F+I+G4       -75929.841  151931.682 - 1.11e-14  151931.838 - 1.15e-14  152210.557 - 2.84e-06
+TN+F+R5          -75915.317  151910.635 - 4.14e-10  151910.827 - 4.19e-10  152220.496 - 1.97e-08
+HKY+F+R5         -75920.240  151918.480 -  8.2e-12  151918.663 - 8.33e-12  152220.595 - 1.88e-08
+GTR+F+R6         -75891.320  151872.639 +   0.0738  151872.882 +   0.0727  152221.234 - 1.36e-08
+TIM+F+R5         -75911.385  151904.769 - 7.78e-09  151904.971 - 7.83e-09  152222.377 - 7.69e-09
+K3Pu+F+R5        -75916.382  151912.764 - 1.43e-10  151912.956 - 1.44e-10  152222.625 -  6.8e-09
+GTR+F+R4         -75912.083  151906.165 - 3.87e-09  151906.367 -  3.9e-09  152223.773 - 3.83e-09
+TN+F+I+G4        -75947.044  151962.088 - 2.78e-21  151962.227 - 2.89e-21  152225.470 - 1.64e-09
+HKY+F+I+G4       -75952.133  151970.266 - 4.66e-23  151970.398 - 4.86e-23  152225.902 - 1.32e-09
+TIM+F+I+G4       -75942.667  151955.334 - 8.15e-20  151955.482 - 8.42e-20  152226.463 - 9.98e-10
+TIM3+F+R5        -75913.552  151909.105 -  8.9e-10  151909.307 - 8.96e-10  152226.713 -  8.8e-10
+TPM3+F+R5        -75918.499  151916.998 - 1.72e-11  151917.191 - 1.74e-11  152226.860 - 8.18e-10
+TPM3u+F+R5       -75918.499  151916.998 - 1.72e-11  151917.191 - 1.74e-11  152226.860 - 8.18e-10
+K3Pu+F+I+G4      -75947.809  151963.618 - 1.29e-21  151963.758 - 1.34e-21  152227.000 - 7.62e-10
+TIM3+F+I+G4      -75945.290  151960.580 - 5.91e-21  151960.728 - 6.11e-21  152231.709 - 7.24e-11
+TPM3u+F+I+G4     -75950.254  151968.507 - 1.12e-22  151968.647 - 1.17e-22  152231.890 - 6.62e-11
+TPM3+F+I+G4      -75950.254  151968.507 - 1.12e-22  151968.647 - 1.17e-22  152231.890 - 6.62e-11
+GTR+F+R3         -75930.838  151939.676 - 2.05e-16  151939.859 - 2.08e-16  152241.792 - 4.68e-13
+GTR+F+R2         -75950.946  151975.891 -  2.8e-24  151976.056 - 2.87e-24  152262.513 - 1.48e-17
+GTR+F+G4         -75965.190  152002.380 - 4.95e-30  152002.536 -  5.1e-30  152281.256 - 1.26e-21
+GTR+F+I          -76083.426  152238.853 - 2.22e-81  152239.009 - 2.28e-81  152517.728 - 5.64e-73
+SYM+R5           -77136.812  154353.624 -        0  154353.817 -        0  154663.486 -        0
+TIM2e+R5         -77147.466  154370.931 -        0  154371.105 -        0  154665.300 -        0
+SYM+I+G4         -77180.270  154428.541 -        0  154428.680 -        0  154691.923 -        0
+TIM2e+I+G4       -77190.971  154445.943 -        0  154446.067 -        0  154693.832 -        0
+TIMe+R5          -77326.084  154728.169 -        0  154728.342 -        0  155022.537 -        0
+TIMe+I+G4        -77364.024  154792.048 -        0  154792.172 -        0  155039.938 -        0
+TIM3e+R5         -77338.864  154753.727 -        0  154753.901 -        0  155048.096 -        0
+TNe+R5           -77346.348  154766.697 -        0  154766.861 -        0  155053.319 -        0
+TIM3e+I+G4       -77377.094  154818.188 -        0  154818.311 -        0  155066.077 -        0
+TNe+I+G4         -77384.445  154830.890 -        0  154831.006 -        0  155071.033 -        0
+TVMe+I+G4        -77521.763  155109.525 -        0  155109.657 -        0  155365.161 -        0
+TVMe+R5          -77498.730  155075.460 -        0  155075.643 -        0  155377.575 -        0
+K3P+I+G4         -77732.549  155527.098 -        0  155527.214 -        0  155767.241 -        0
+K3P+R5           -77711.947  155497.894 -        0  155498.059 -        0  155784.517 -        0
+K2P+I+G4         -77752.472  155564.945 -        0  155565.054 -        0  155797.341 -        0
+K2P+R5           -77731.444  155534.889 -        0  155535.045 -        0  155813.764 -        0
+GTR+F            -80034.202  160138.403 -        0  160138.551 -        0  160409.532 -        0
+F81+F+I+G4       -85684.826  171433.653 -        0  171433.777 -        0  171681.542 -        0
+F81+F+R5         -85674.053  171424.105 -        0  171424.279 -        0  171718.474 -        0
+JC+I+G4          -86815.253  173688.506 -        0  173688.608 -        0  173913.155 -        0
+JC+R5            -86803.530  173677.060 -        0  173677.208 -        0  173948.189 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TIM2+F+R5
+
+Rate parameter R:
+
+  A-C: 1.9324
+  A-G: 40.2707
+  A-T: 1.9324
+  C-G: 1.0000
+  C-T: 45.2748
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3212
+  pi(C) = 0.2985
+  pi(G) = 0.1243
+  pi(T) = 0.256
+
+Rate matrix Q:
+
+  A   -0.5543   0.05262    0.4565   0.04514
+  C   0.05663    -1.126   0.01134     1.058
+  G      1.18   0.02723    -1.231   0.02336
+  T   0.05663     1.233   0.01134    -1.301
+
+Model of rate heterogeneity: FreeRate with 5 categories
+Site proportion and rates:  (0.2844,0.02246) (0.222,0.06059) (0.1537,0.2618) (0.3306,2.372) (0.009355,16.65)
+
+ Category  Relative_rate  Proportion
+  1         0.02246        0.2844
+  2         0.06059        0.222
+  3         0.2618         0.1537
+  4         2.372          0.3306
+  5         16.65          0.009355
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -75893.4974 (s.e. 527.3574)
+Unconstrained log-likelihood (without tree): -72412.6897
+Number of free parameters (#branches + #model parameters): 41
+Akaike information criterion (AIC) score: 151868.9949
+Corrected Akaike information criterion (AICc) score: 151869.1969
+Bayesian information criterion (BIC) score: 152186.6031
+
+Total tree length (sum of branch lengths): 1.2142
+Sum of internal branch lengths: 0.4092 (33.7025% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Allenopithecus_nigroviridis_KJ434962' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++---------------------------------------Allenopithecus_nigroviridis_KJ434962
+|
+|                                            +------------Cercocebus_atys_KT159932
+|                                         +--| (94.9/95)
+|                                         |  +--------------Cercocebus_torquatus_KJ434959
++-----------------------------------------| (100/100)
+|                                         +------------Cercocebus_chrysogaster_KC757390
+|
+|                                    +-----Cercopithecus_aethiops_AY863426
+|                                 +--| (100/100)
+|                                 |  |  +--Chlorocebus_aethiops_C1_KU682691
+|                                 |  +--| (100/100)
+|                                 |     +--Chlorocebus_aethiops_MN816163
+|                              +--| (100/100)
+|                              |  |  +-----Chlorocebus_cynosuros_C3_KU682693
+|                              |  +--| (69.1/72)
+|                              |     +-----Chlorocebus_cynosuros_KM262190
+|        +---------------------| (100/100)
+|        |                     +-------Chlorocebus_djamdjamensis_C5_KU682695
++--------| (100/100)
+         |                      +--------Cercopithecus_albogularis_KC757391
+         |      +---------------| (100/100)
+         |      |               +--------Cercopithecus_mitis_KJ434956
+         |  +---| (100/100)
+         |  |   +-------------------------Cercopithecus_lhoesti_KJ434957
+         +--| (39.8/62)
+            |   +----------------------------Cercopithecus_diana_KJ434958
+            +---| (100/100)
+                +--------------------------Cercopithecus_neglectus_MW160353
+
+Tree in newick format:
+
+(Allenopithecus_nigroviridis_KJ434962:0.1474140195,((Cercocebus_atys_KT159932:0.0508580169,Cercocebus_torquatus_KJ434959:0.0562685839)94.9/95:0.0094381611,Cercocebus_chrysogaster_KC757390:0.0511259412)100/100:0.1544494817,((((Cercopithecus_aethiops_AY863426:0.0221835236,(Chlorocebus_aethiops_C1_KU682691:0.0080961876,Chlorocebus_aethiops_MN816163:0.0104642592)100/100:0.0120854426)100/100:0.0048654608,(Chlorocebus_cynosuros_C3_KU682693:0.0241962287,Chlorocebus_cynosuros_KM262190:0.0250691331)69.1/72:0.0017398823)100/100:0.0127807560,Chlorocebus_djamdjamensis_C5_KU682695:0.0319881948)100/100:0.0834758403,(((Cercopithecus_albogularis_KC757391:0.0366651729,Cercopithecus_mitis_KJ434956:0.0331901409)100/100:0.0593605632,Cercopithecus_lhoesti_KJ434957:0.0964464690)100/100:0.0167387771,(Cercopithecus_diana_KJ434958:0.1093319625,Cercopithecus_neglectus_MW160353:0.1017112524)100/100:0.0175917107)39.8/62:0.0020104988)100/100:0.0346917556);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -75893.497245
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++---------------------------------------Allenopithecus_nigroviridis_KJ434962
+|
+|                                            +------------Cercocebus_atys_KT159932
+|                                         +--| (95)
+|                                         |  +--------------Cercocebus_torquatus_KJ434959
++-----------------------------------------| (100)
+|                                         +------------Cercocebus_chrysogaster_KC757390
+|
+|                                    +-----Cercopithecus_aethiops_AY863426
+|                                 +--| (100)
+|                                 |  |  +--Chlorocebus_aethiops_C1_KU682691
+|                                 |  +--| (100)
+|                                 |     +--Chlorocebus_aethiops_MN816163
+|                              +--| (100)
+|                              |  |  +-----Chlorocebus_cynosuros_C3_KU682693
+|                              |  +--| (72)
+|                              |     +-----Chlorocebus_cynosuros_KM262190
+|        +---------------------| (100)
+|        |                     +-------Chlorocebus_djamdjamensis_C5_KU682695
++--------| (100)
+         |                      +--------Cercopithecus_albogularis_KC757391
+         |      +---------------| (100)
+         |      |               +--------Cercopithecus_mitis_KJ434956
+         |  +---| (100)
+         |  |   +-------------------------Cercopithecus_lhoesti_KJ434957
+         +--| (62)
+            |   +----------------------------Cercopithecus_diana_KJ434958
+            +---| (100)
+                +--------------------------Cercopithecus_neglectus_MW160353
+
+
+Consensus tree in newick format: 
+
+(Allenopithecus_nigroviridis_KJ434962:0.1474538157,((Cercocebus_atys_KT159932:0.0508582653,Cercocebus_torquatus_KJ434959:0.0562754197)95:0.0094406195,Cercocebus_chrysogaster_KC757390:0.0511123759)100:0.1544805828,((((Cercopithecus_aethiops_AY863426:0.0221916057,(Chlorocebus_aethiops_C1_KU682691:0.0080977062,Chlorocebus_aethiops_MN816163:0.0104683278)100:0.0120888376)100:0.0048654508,(Chlorocebus_cynosuros_C3_KU682693:0.0242048968,Chlorocebus_cynosuros_KM262190:0.0250776829)72:0.0017394927)100:0.0127824021,Chlorocebus_djamdjamensis_C5_KU682695:0.0319997881)100:0.0834994293,(((Cercopithecus_albogularis_KC757391:0.0366660091,Cercopithecus_mitis_KJ434956:0.0331985866)100:0.0593737865,Cercopithecus_lhoesti_KJ434957:0.0964702021)100:0.0167355314,(Cercopithecus_diana_KJ434958:0.1093638528,Cercopithecus_neglectus_MW160353:0.1017444784)100:0.0175848177)62:0.0020051998)100:0.0346823753);
+
+TIME STAMP
+----------
+
+Date and time: Mon Jun  1 10:36:15 2026
+Total CPU time used: 14.972528 seconds (0h:0m:14s)
+Total wall-clock time used: 4.108483646 seconds (0h:0m:4s)
+

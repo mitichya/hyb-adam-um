@@ -1,0 +1,2 @@
+NJ* strict p=85 rep=23 seed=77 status=FAIL reason=Known-distance graph is disconnected (2 components).
+FAILED p85 rep23: RuntimeError('Known-distance graph is disconnected (2 components).')

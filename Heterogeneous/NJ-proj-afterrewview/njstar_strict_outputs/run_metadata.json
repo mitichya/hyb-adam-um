@@ -1,0 +1,24 @@
+{
+  "method": "NJstar-STRICT",
+  "reference_matrix_file": "Dref_MAFFT_pairwise_deletion_pdistance_Tlabels-heterog.csv",
+  "n_taxa": 15,
+  "n_pairs_lower_triangle": 105,
+  "n_triplets": 455,
+  "missing_fracs": [
+    0.3,
+    0.5,
+    0.65,
+    0.85
+  ],
+  "reps": 30,
+  "base_seed": 55,
+  "s_top": 15,
+  "preserve_observed": true,
+  "output_root": "njstar_strict_outputs",
+  "detailed_csv": "njstar_strict_outputs/tables/njstar_strict_all_masks_detailed.csv",
+  "summary_numeric_csv": "njstar_strict_outputs/tables/njstar_strict_summary_numeric_by_missingness.csv",
+  "summary_formatted_csv": "njstar_strict_outputs/tables/njstar_strict_summary_formatted_by_missingness.csv",
+  "Delta_original": 46.74540871538672,
+  "Delta_normalized_original": 0.02022617682793644,
+  "optimized_variables_definition": "0 because STRICT NJ* is constructive, not a continuous optimizer; see imputed_variables and tree_edges_final."
+}

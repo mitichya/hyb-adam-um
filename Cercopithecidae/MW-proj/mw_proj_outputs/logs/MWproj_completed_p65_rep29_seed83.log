@@ -1,0 +1,5 @@
+MW-proj run log
+method=MW-proj
+nnls_backend=scipy.optimize.nnls
+{"method": "MW-proj", "pct_missing": 65, "frac_missing_requested": 0.65, "missingness_actual": 0.6476190476190476, "replicate": 29, "mask_seed": 83, "n_pairs_total": 105, "n_missing": 68, "n_observed": 37, "optimized_variables": NaN, "success": false, "success_numerical": false, "success_valid_matrix": false, "objective_improved": false, "masked_file": "missing_p65_rep29_seed83.csv", "completed_file": "", "run_log_file": ""}
+SUCCESS runtime=16.383768s RMSE_miss=0.015664145 MAE_miss=0.0054080572 Delta_final=27.472663 optimized_variables=27

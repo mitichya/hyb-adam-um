@@ -1,0 +1,2 @@
+NJ* strict p=65 rep=25 seed=79 status=FAIL reason=No eligible pair at r=4: need d_xy known and |S_xy|>=3.
+FAILED p65 rep25: RuntimeError('No eligible pair at r=4: need d_xy known and |S_xy|>=3.')

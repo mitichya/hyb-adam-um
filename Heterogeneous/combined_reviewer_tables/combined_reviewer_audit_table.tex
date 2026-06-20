@@ -1,0 +1,44 @@
+% Requires: \usepackage{booktabs,multirow,rotating}
+% Recommended macro: \newcommand{\best}[1]{\textbf{#1}}
+\begin{sidewaystable}[t]
+\caption{Reviewer-audit table: missing-entry reconstruction accuracy, runtime, optimization size, convergence diagnostics, success/failure, topology accuracy, NJ-vs-ML patristic accuracy, and fixed-ML-topology branch-length diagnostics.}
+\label{tab:reviewer_audit_results}
+\centering
+\tiny
+\setlength{\tabcolsep}{1.2pt}
+\begin{tabular}{llcccccccccccccc}
+\toprule
+$p$ & Method & RMSE & MAE & Pear. & Spear. & Time(s) & $n_{\rm miss}/n_{\rm obs}$ & Vars & Epoch/iter & Succ. & RF$_{\rm norm}$ & NJ pat.\ RMSE & edge BL RMSE & fit pat.\ RMSE & fit pat.\ Spear. \\
+\midrule
+\multirow{6}{*}{30\%} & Hyb-Adam-UM & 1.56 $\pm$ 0.78 & 0.80 $\pm$ 0.36 & 0.96 $\pm$ 0.03 & 0.94 $\pm$ 0.04 & 21.65 $\pm$ 0.22 & 32/73 & 32 & 4750 & 30/30 & 0.13 $\pm$ 0.11 & 45.32 $\pm$ 0.06 & \best{9.05 $\pm$ 0.14} & 45.32 $\pm$ 0.04 & 0.98 $\pm$ $<0.01$ \\
+ & MW$^\star$-proj & \best{1.34 $\pm$ 0.76} & \best{0.70 $\pm$ 0.34} & \best{0.97 $\pm$ 0.02} & \best{0.97 $\pm$ 0.02} & 14.87 $\pm$ 1.30 & 32/73 & 27 & N/A & 30/30 & \best{0.11 $\pm$ 0.10} & 45.36 $\pm$ 0.05 & 9.06 $\pm$ 0.11 & 45.36 $\pm$ 0.05 & \best{0.98 $\pm$ $<0.01$} \\
+ & NJ$^\star$-proj & 2.18 $\pm$ 0.89 & 1.37 $\pm$ 0.62 & 0.92 $\pm$ 0.04 & 0.87 $\pm$ 0.07 & \best{0.01 $\pm$ 0.01} & 32/73 & 32 & 13 & 27/30 & 0.18 $\pm$ 0.12 & \best{45.27 $\pm$ 0.17} & 9.06 $\pm$ 0.15 & \best{45.26 $\pm$ 0.17} & 0.95 $\pm$ 0.02 \\
+ & LRMC & 10.60 $\pm$ 0.79 & 9.14 $\pm$ 0.82 & 0.40 $\pm$ 0.15 & 0.35 $\pm$ 0.14 & 0.06 $\pm$ 0.04 & 32/73 & 32 & 1499 & 30/30 & 0.88 $\pm$ 0.13 & 48.60 $\pm$ 0.39 & 10.00 $\pm$ 0.54 & 48.12 $\pm$ 0.30 & 0.82 $\pm$ 0.06 \\
+ & KNN-impute & 6.36 $\pm$ 0.49 & 5.42 $\pm$ 0.54 & 0.81 $\pm$ 0.07 & 0.73 $\pm$ 0.08 & 0.03 $\pm$ 0.14 & 32/73 & 32 & N/A & 30/30 & 0.48 $\pm$ 0.14 & 46.92 $\pm$ 0.35 & 9.89 $\pm$ 0.47 & 46.90 $\pm$ 0.26 & 0.88 $\pm$ 0.04 \\
+ & MDS-SMACOF & 3.93 $\pm$ 0.94 & 3.13 $\pm$ 0.61 & 0.78 $\pm$ 0.13 & 0.72 $\pm$ 0.11 & 0.04 $\pm$ $<0.01$ & 32/73 & 210 & 878 & 30/30 & 0.24 $\pm$ 0.15 & 45.93 $\pm$ 0.16 & 9.20 $\pm$ 0.12 & 45.92 $\pm$ 0.15 & 0.93 $\pm$ 0.03 \\
+\midrule
+\multirow{6}{*}{50\%} & Hyb-Adam-UM & 2.12 $\pm$ 0.98 & 1.12 $\pm$ 0.51 & 0.93 $\pm$ 0.06 & 0.90 $\pm$ 0.08 & 35.00 $\pm$ 0.28 & 52/53 & 52 & 4650 & 30/30 & 0.33 $\pm$ 0.16 & 45.31 $\pm$ 0.10 & 9.03 $\pm$ 0.17 & 45.29 $\pm$ 0.09 & 0.96 $\pm$ 0.02 \\
+ & MW$^\star$-proj & \best{2.04 $\pm$ 1.00} & \best{1.09 $\pm$ 0.52} & \best{0.93 $\pm$ 0.06} & \best{0.93 $\pm$ 0.07} & 14.14 $\pm$ 2.00 & 52/53 & 27 & N/A & 30/30 & \best{0.29 $\pm$ 0.14} & 45.39 $\pm$ 0.12 & 9.05 $\pm$ 0.17 & 45.38 $\pm$ 0.11 & \best{0.96 $\pm$ 0.02} \\
+ & NJ$^\star$-proj & 2.59 $\pm$ 1.04 & 1.56 $\pm$ 0.73 & 0.89 $\pm$ 0.07 & 0.88 $\pm$ 0.08 & 0.01 $\pm$ 0.00 & 52/53 & 52 & 13 & 22/30 & 0.41 $\pm$ 0.19 & \best{45.15 $\pm$ 0.21} & \best{8.90 $\pm$ 0.27} & \best{45.13 $\pm$ 0.22} & 0.93 $\pm$ 0.04 \\
+ & LRMC & 11.46 $\pm$ 0.81 & 9.88 $\pm$ 0.74 & 0.31 $\pm$ 0.13 & 0.28 $\pm$ 0.15 & 0.08 $\pm$ 0.05 & 52/53 & 52 & 2171 & 30/30 & 0.93 $\pm$ 0.09 & 50.57 $\pm$ 0.61 & 10.54 $\pm$ 0.57 & 50.15 $\pm$ 0.54 & 0.72 $\pm$ 0.11 \\
+ & KNN-impute & 6.72 $\pm$ 0.55 & 5.52 $\pm$ 0.46 & 0.75 $\pm$ 0.08 & 0.70 $\pm$ 0.10 & \best{$<0.01$ $\pm$ $<0.01$} & 52/53 & 52 & N/A & 30/30 & 0.60 $\pm$ 0.15 & 47.97 $\pm$ 0.50 & 10.43 $\pm$ 0.48 & 47.88 $\pm$ 0.38 & 0.86 $\pm$ 0.07 \\
+ & MDS-SMACOF & 4.29 $\pm$ 0.85 & 3.43 $\pm$ 0.58 & 0.72 $\pm$ 0.13 & 0.71 $\pm$ 0.10 & 0.02 $\pm$ $<0.01$ & 52/53 & 210 & 384 & 30/30 & 0.46 $\pm$ 0.16 & 46.35 $\pm$ 0.30 & 9.31 $\pm$ 0.16 & 46.32 $\pm$ 0.26 & 0.91 $\pm$ 0.03 \\
+\midrule
+\multirow{6}{*}{65\%} & Hyb-Adam-UM & 3.18 $\pm$ 1.17 & \best{1.72 $\pm$ 0.68} & \best{0.83 $\pm$ 0.12} & 0.81 $\pm$ 0.14 & 46.29 $\pm$ 0.75 & 68/37 & 68 & 4767 & 30/30 & 0.56 $\pm$ 0.16 & 45.22 $\pm$ 0.17 & 9.07 $\pm$ 0.17 & 45.21 $\pm$ 0.17 & 0.92 $\pm$ 0.07 \\
+ & MW$^\star$-proj & \best{3.14 $\pm$ 1.15} & 1.75 $\pm$ 0.71 & 0.83 $\pm$ 0.12 & \best{0.86 $\pm$ 0.11} & 14.43 $\pm$ 1.74 & 68/37 & 27 & N/A & 30/30 & \best{0.51 $\pm$ 0.17} & 45.45 $\pm$ 0.29 & 9.12 $\pm$ 0.18 & 45.43 $\pm$ 0.29 & \best{0.92 $\pm$ 0.05} \\
+ & NJ$^\star$-proj & 4.90 $\pm$ 1.93 & 3.38 $\pm$ 1.54 & 0.65 $\pm$ 0.22 & 0.65 $\pm$ 0.26 & 0.01 $\pm$ 0.00 & 68/37 & 68 & 13 & 11/30 & 0.70 $\pm$ 0.18 & \best{44.86 $\pm$ 0.62} & \best{8.94 $\pm$ 0.38} & \best{44.77 $\pm$ 0.66} & 0.79 $\pm$ 0.13 \\
+ & LRMC & 13.34 $\pm$ 0.95 & 11.58 $\pm$ 0.80 & 0.18 $\pm$ 0.10 & 0.16 $\pm$ 0.10 & 0.10 $\pm$ 0.06 & 68/37 & 68 & 2667 & 30/30 & 0.95 $\pm$ 0.05 & 53.21 $\pm$ 0.74 & 11.05 $\pm$ 0.59 & 52.78 $\pm$ 0.58 & 0.56 $\pm$ 0.13 \\
+ & KNN-impute & 8.25 $\pm$ 0.58 & 6.74 $\pm$ 0.61 & 0.58 $\pm$ 0.10 & 0.54 $\pm$ 0.09 & \best{$<0.01$ $\pm$ $<0.01$} & 68/37 & 68 & N/A & 30/30 & 0.75 $\pm$ 0.17 & 49.53 $\pm$ 0.51 & 10.76 $\pm$ 0.49 & 49.38 $\pm$ 0.48 & 0.80 $\pm$ 0.05 \\
+ & MDS-SMACOF & 4.86 $\pm$ 0.69 & 3.89 $\pm$ 0.48 & 0.56 $\pm$ 0.17 & 0.62 $\pm$ 0.13 & 0.01 $\pm$ $<0.01$ & 68/37 & 210 & 197 & 30/30 & 0.69 $\pm$ 0.15 & 46.93 $\pm$ 0.43 & 9.46 $\pm$ 0.18 & 46.86 $\pm$ 0.42 & 0.86 $\pm$ 0.05 \\
+\midrule
+\multirow{6}{*}{85\%} & Hyb-Adam-UM & \best{5.73 $\pm$ 1.04} & \best{3.65 $\pm$ 0.87} & \best{0.46 $\pm$ 0.19} & \best{0.41 $\pm$ 0.28} & 60.61 $\pm$ 0.58 & 89/16 & 89 & 4767 & 30/30 & \best{0.90 $\pm$ 0.08} & \best{44.67 $\pm$ 0.49} & \best{9.30 $\pm$ 0.21} & \best{44.59 $\pm$ 0.51} & \best{0.70 $\pm$ 0.15} \\
+ & MW$^\star$-proj & 6.96 $\pm$ 1.28 & 4.53 $\pm$ 1.08 & 0.23 $\pm$ 0.21 & 0.32 $\pm$ 0.25 & 14.22 $\pm$ 4.77 & 89/16 & 27 & N/A & 30/30 & 0.93 $\pm$ 0.08 & 45.92 $\pm$ 1.58 & 9.68 $\pm$ 0.63 & 45.75 $\pm$ 1.56 & 0.54 $\pm$ 0.23 \\
+ & NJ$^\star$-proj & N/A & N/A & N/A & N/A & N/A & 89/16 & 89 & N/A & 0/30 & N/A & N/A & N/A & N/A & N/A \\
+ & LRMC & 18.79 $\pm$ 1.54 & 16.93 $\pm$ 1.73 & 0.03 $\pm$ 0.12 & $<0.01$ $\pm$ 0.16 & 0.16 $\pm$ 0.07 & 89/16 & 89 & 4282 & 30/30 & 0.99 $\pm$ 0.02 & 60.21 $\pm$ 1.61 & 12.58 $\pm$ 0.50 & 59.29 $\pm$ 1.50 & 0.30 $\pm$ 0.23 \\
+ & KNN-impute & 12.77 $\pm$ 0.74 & 10.81 $\pm$ 0.71 & 0.14 $\pm$ 0.10 & 0.14 $\pm$ 0.12 & $<0.01$ $\pm$ $<0.01$ & 89/16 & 89 & N/A & 30/30 & 0.96 $\pm$ 0.06 & 54.67 $\pm$ 0.91 & 11.43 $\pm$ 0.59 & 54.09 $\pm$ 0.88 & 0.47 $\pm$ 0.18 \\
+ & MDS-SMACOF & 6.03 $\pm$ 1.05 & 4.83 $\pm$ 0.80 & 0.05 $\pm$ 0.23 & 0.11 $\pm$ 0.25 & \best{$<0.01$ $\pm$ $<0.01$} & 89/16 & 210 & 17 & 30/30 & 0.93 $\pm$ 0.06 & 48.01 $\pm$ 1.53 & 9.93 $\pm$ 0.35 & 47.95 $\pm$ 1.53 & 0.59 $\pm$ 0.20 \\
+\bottomrule
+\end{tabular}
+\vspace{2pt}
+\parbox{\textwidth}{\scriptsize Errors are computed only on hidden entries. Succ. is displayed as successful/evaluated runs in the 30-run protocol. Vars denotes optimized variables for optimization methods and imputed entries for direct-imputation baselines. Epoch/iter reports convergence epoch, epochs used, iterations, or constructive joins, depending on the method summary. NJ pat. RMSE uses only the NJ-vs-reference-ML-tree patristic comparison. fit pat. RMSE/Spear. are fixed-ML-topology fitted-patristic diagnostics and are not mixed with the main NJ patristic metrics.}
+\end{sidewaystable}

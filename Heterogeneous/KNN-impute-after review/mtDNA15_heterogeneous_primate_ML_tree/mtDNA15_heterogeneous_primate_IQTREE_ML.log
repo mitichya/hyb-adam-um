@@ -1,0 +1,212 @@
+IQ-TREE multicore version 2.0.7 for Linux 64-bit built Jan 21 2022
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    DESKTOP-1BN4F8D (AVX2, FMA3, 62 GB RAM)
+Command: /usr/bin/iqtree2 -s mtDNA15_heterogeneous_primate_ML_tree/mtDNA15_heterogeneous_primate_aligned_mafft.fasta -m MFP -B 1000 -alrt 1000 -T AUTO --prefix mtDNA15_heterogeneous_primate_ML_tree/mtDNA15_heterogeneous_primate_IQTREE_ML -redo
+Seed:    194748 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Jun 11 22:31:53 2026
+Kernel:  AVX+FMA - auto-detect threads (20 CPU cores detected)
+
+Reading alignment file mtDNA15_heterogeneous_primate_ML_tree/mtDNA15_heterogeneous_primate_aligned_mafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 15 sequences with 18360 columns, 6970 distinct patterns
+7312 parsimony-informative, 2609 singleton sites, 8439 constant sites
+                                Gap/Ambiguity  Composition  p-value
+   1  Homo_sapiens_NC_012920            9.76%    failed      0.00%
+   2  Pan_troglodytes_NC_001643         9.84%    failed      0.02%
+   3  Pan_paniscus_NC_001644            9.79%    failed      0.08%
+   4  Gorilla_gorilla_D38114           10.87%    failed      0.03%
+   5  Pongo_abelii_NC_002083           10.14%    failed      0.00%
+   6  Hylobates_lar_NC_002082          10.28%    failed      0.00%
+   7  Macaca_mulatta_NC_005943          9.78%    failed      0.47%
+   8  Papio_hamadryas_NC_001992        10.02%    failed      0.06%
+   9  Chlorocebus_aethiops_NC_007009   10.77%    failed      0.86%
+  10  Colobus_guereza_NC_006901         9.32%    failed      0.01%
+  11  Cebus_albifrons_NC_002763         9.84%    failed      0.00%
+  12  Callithrix_jacchus_KM588314      10.14%    failed      0.00%
+  13  Tarsius_bancanus_NC_002811        7.81%    failed      0.00%
+  14  Nycticebus_coucang_NC_002765      8.69%    failed      0.00%
+  15  Lemur_catta_NC_004025             7.21%    failed      0.00%
+****  TOTAL                             9.62%  15 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.002 seconds
+Measuring multi-threading efficiency up to 20 CPU cores
+Increase to 10 rounds for branch lengths
+257 trees examined
+Threads: 1 / Time: 20.024 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -149966
+Threads: 2 / Time: 10.044 sec / Speedup: 1.994 / Efficiency: 100% / LogL: -149966
+Threads: 3 / Time: 6.904 sec / Speedup: 2.900 / Efficiency: 97% / LogL: -149966
+Threads: 4 / Time: 5.416 sec / Speedup: 3.697 / Efficiency: 92% / LogL: -149966
+Threads: 5 / Time: 6.482 sec / Speedup: 3.089 / Efficiency: 62% / LogL: -149966
+BEST NUMBER OF THREADS: 4
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -131638.243
+2. Current log-likelihood: -131635.009
+3. Current log-likelihood: -131631.666
+4. Current log-likelihood: -131628.163
+5. Current log-likelihood: -131624.849
+6. Current log-likelihood: -131621.649
+7. Current log-likelihood: -131618.595
+8. Current log-likelihood: -131615.720
+9. Current log-likelihood: -131613.058
+10. Current log-likelihood: -131610.636
+11. Current log-likelihood: -131608.479
+12. Current log-likelihood: -131606.563
+13. Current log-likelihood: -131604.980
+14. Current log-likelihood: -131603.664
+15. Current log-likelihood: -131602.599
+Optimal log-likelihood: -131601.690
+Rate parameters:  A-C: 3.04094  A-G: 13.25848  A-T: 2.34338  C-G: 0.86496  C-T: 20.19469  G-T: 1.00000
+Base frequencies:  A: 0.318  C: 0.293  G: 0.130  T: 0.260
+Proportion of invariable sites: 0.309
+Gamma shape alpha: 1.050
+Parameters optimization took 15 rounds (0.191 sec)
+Time for fast ML tree search: 0.373 seconds
+
+NOTE: ModelFinder requires 60 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 18360) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         140356.595   35  280783.190   280783.328   281056.818
+  2  GTR+F+I       132724.395   36  265520.791   265520.936   265802.236
+  3  GTR+F+G4      131775.344   36  263622.687   263622.833   263904.133
+  4  GTR+F+I+G4    131599.666   37  263273.332   263273.485   263562.595
+  5  GTR+F+R2      131876.173   37  263826.346   263826.499   264115.609
+  6  GTR+F+R3      131596.728   39  263271.456   263271.626   263576.355
+  7  GTR+F+R4      131593.669   41  263269.337   263269.525   263589.873
+ 17  SYM+I+G4      133176.980   34  266421.960   266422.089   266687.769
+ 30  TVM+F+I+G4    131708.713   36  263489.425   263489.571   263770.871
+ 43  TVMe+I+G4     134307.822   33  268681.644   268681.766   268939.636
+ 56  TIM3+F+I+G4   131851.076   35  263772.153   263772.291   264045.781
+ 69  TIM3e+I+G4    134719.991   32  269503.981   269504.096   269754.155
+ 82  TIM2+F+I+G4   131613.796   35  263297.591   263297.729   263571.219
+ 95  TIM2e+I+G4    133236.390   32  266536.780   266536.895   266786.953
+108  TIM+F+I+G4    131826.736   35  263723.472   263723.610   263997.100
+121  TIMe+I+G4     134577.392   32  269218.784   269218.899   269468.958
+134  TPM3u+F+I+G4  131919.519   34  263907.037   263907.167   264172.847
+147  TPM3+F+I+G4   131919.519   34  263907.037   263907.167   264172.847
+160  TPM2u+F+I+G4  131722.886   34  263513.772   263513.902   263779.582
+173  TPM2+F+I+G4   131722.886   34  263513.772   263513.902   263779.582
+186  K3Pu+F+I+G4   131897.422   34  263862.845   263862.975   264128.654
+199  K3P+I+G4      135771.617   31  271605.235   271605.343   271847.590
+212  TN+F+I+G4     131860.216   34  263788.432   263788.562   264054.242
+225  TNe+I+G4      134751.247   31  269564.494   269564.602   269806.850
+238  HKY+F+I+G4    131928.387   33  263922.773   263922.896   264180.765
+251  K2P+I+G4      135943.678   30  271947.357   271947.458   272181.895
+264  F81+F+I+G4    140812.851   32  281689.703   281689.818   281939.876
+277  JC+I+G4       143344.010   29  286746.021   286746.116   286972.741
+Akaike Information Criterion:           GTR+F+R4
+Corrected Akaike Information Criterion: GTR+F+R4
+Bayesian Information Criterion:         GTR+F+I+G4
+Best-fit model: GTR+F+I+G4 chosen according to BIC
+
+All model information printed to mtDNA15_heterogeneous_primate_ML_tree/mtDNA15_heterogeneous_primate_IQTREE_ML.model.gz
+CPU time for ModelFinder: 134.044 seconds (0h:2m:14s)
+Wall-clock time for ModelFinder: 53.430 seconds (0h:0m:53s)
+Generating 1000 samples for ultrafast bootstrap (seed: 194748)...
+
+NOTE: 40 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.128 / Estimate: 0.000, 0.390 / LogL: -131774.670
+Init pinv, alpha: 0.051, 1.128 / Estimate: 0.320, 1.125 / LogL: -131599.486
+Init pinv, alpha: 0.102, 1.128 / Estimate: 0.320, 1.120 / LogL: -131599.834
+Init pinv, alpha: 0.153, 1.128 / Estimate: 0.321, 1.128 / LogL: -131599.456
+Init pinv, alpha: 0.204, 1.128 / Estimate: 0.320, 1.126 / LogL: -131599.581
+Init pinv, alpha: 0.255, 1.128 / Estimate: 0.320, 1.125 / LogL: -131599.514
+Init pinv, alpha: 0.306, 1.128 / Estimate: 0.321, 1.129 / LogL: -131599.644
+Init pinv, alpha: 0.357, 1.128 / Estimate: 0.328, 1.183 / LogL: -131599.646
+Init pinv, alpha: 0.409, 1.128 / Estimate: 0.328, 1.183 / LogL: -131599.553
+Init pinv, alpha: 0.460, 1.128 / Estimate: 0.328, 1.180 / LogL: -131599.535
+Optimal pinv,alpha: 0.321, 1.128 / LogL: -131599.456
+
+Parameters optimization took 3.602 sec
+Computing ML distances based on estimated model parameters... 0.008 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -131599.455
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 99 parsimony trees... 0.329 second
+Computing log-likelihood of 99 initial trees ... 0.282 seconds
+Current best score: -131599.455
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -131599.413
+Iteration 10 / LogL: -131607.885 / Time: 0h:0m:4s
+Iteration 20 / LogL: -131599.511 / Time: 0h:0m:5s
+Finish initializing candidate tree set (1)
+Current best tree score: -131599.413 / CPU time: 1.598
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -131599.592 / Time: 0h:0m:5s (0h:0m:14s left)
+Iteration 40 / LogL: -131600.941 / Time: 0h:0m:6s (0h:0m:9s left)
+Iteration 50 / LogL: -131600.689 / Time: 0h:0m:6s (0h:0m:6s left)
+Log-likelihood cutoff on original alignment: -131613.808
+Iteration 60 / LogL: -131600.533 / Time: 0h:0m:6s (0h:0m:4s left)
+Iteration 70 / LogL: -131600.606 / Time: 0h:0m:7s (0h:0m:3s left)
+Iteration 80 / LogL: -131599.720 / Time: 0h:0m:7s (0h:0m:2s left)
+Iteration 90 / LogL: -131599.523 / Time: 0h:0m:8s (0h:0m:0s left)
+Iteration 100 / LogL: -131601.852 / Time: 0h:0m:8s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -131613.808
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:8s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -131599.413
+2. Current log-likelihood: -131599.378
+3. Current log-likelihood: -131599.361
+4. Current log-likelihood: -131599.344
+5. Current log-likelihood: -131599.329
+Optimal log-likelihood: -131599.323
+Rate parameters:  A-C: 3.19586  A-G: 13.86472  A-T: 2.46869  C-G: 0.91878  C-T: 21.03242  G-T: 1.00000
+Base frequencies:  A: 0.318  C: 0.293  G: 0.130  T: 0.260
+Proportion of invariable sites: 0.323
+Gamma shape alpha: 1.146
+Parameters optimization took 5 rounds (0.051 sec)
+BEST SCORE FOUND : -131599.323
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.557 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file mtDNA15_heterogeneous_primate_ML_tree/mtDNA15_heterogeneous_primate_IQTREE_ML.splits.nex
+Total tree length: 3.174
+
+Total number of iterations: 102
+CPU time used for tree search: 18.515 sec (0h:0m:18s)
+Wall-clock time used for tree search: 4.656 sec (0h:0m:4s)
+Total CPU time used: 35.575 sec (0h:0m:35s)
+Total wall-clock time used: 9.096 sec (0h:0m:9s)
+
+Computing bootstrap consensus tree...
+Reading input file mtDNA15_heterogeneous_primate_ML_tree/mtDNA15_heterogeneous_primate_IQTREE_ML.splits.nex...
+15 taxa and 27 splits.
+Consensus tree written to mtDNA15_heterogeneous_primate_ML_tree/mtDNA15_heterogeneous_primate_IQTREE_ML.contree
+Reading input trees file mtDNA15_heterogeneous_primate_ML_tree/mtDNA15_heterogeneous_primate_IQTREE_ML.contree
+Log-likelihood of consensus tree: -131599.323
+
+Analysis results written to: 
+  IQ-TREE report:                mtDNA15_heterogeneous_primate_ML_tree/mtDNA15_heterogeneous_primate_IQTREE_ML.iqtree
+  Maximum-likelihood tree:       mtDNA15_heterogeneous_primate_ML_tree/mtDNA15_heterogeneous_primate_IQTREE_ML.treefile
+  Likelihood distances:          mtDNA15_heterogeneous_primate_ML_tree/mtDNA15_heterogeneous_primate_IQTREE_ML.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          mtDNA15_heterogeneous_primate_ML_tree/mtDNA15_heterogeneous_primate_IQTREE_ML.splits.nex
+  Consensus tree:                mtDNA15_heterogeneous_primate_ML_tree/mtDNA15_heterogeneous_primate_IQTREE_ML.contree
+  Screen log file:               mtDNA15_heterogeneous_primate_ML_tree/mtDNA15_heterogeneous_primate_IQTREE_ML.log
+
+Date and Time: Thu Jun 11 22:32:55 2026

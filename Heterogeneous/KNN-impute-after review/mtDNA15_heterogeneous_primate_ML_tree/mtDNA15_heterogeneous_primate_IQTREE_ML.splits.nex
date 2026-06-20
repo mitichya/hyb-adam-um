@@ -1,0 +1,57 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=15;
+TAXLABELS
+[1] 'Homo_sapiens_NC_012920'
+[2] 'Pan_troglodytes_NC_001643'
+[3] 'Pan_paniscus_NC_001644'
+[4] 'Gorilla_gorilla_D38114'
+[5] 'Pongo_abelii_NC_002083'
+[6] 'Hylobates_lar_NC_002082'
+[7] 'Macaca_mulatta_NC_005943'
+[8] 'Papio_hamadryas_NC_001992'
+[9] 'Chlorocebus_aethiops_NC_007009'
+[10] 'Colobus_guereza_NC_006901'
+[11] 'Cebus_albifrons_NC_002763'
+[12] 'Callithrix_jacchus_KM588314'
+[13] 'Tarsius_bancanus_NC_002811'
+[14] 'Nycticebus_coucang_NC_002765'
+[15] 'Lemur_catta_NC_004025'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=15 nsplits=27;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 3,
+	100	 2 3,
+	100	 4,
+	100	 5,
+	100	 6,
+	100	 7,
+	100	 8,
+	100	 7 8,
+	100	 9,
+	100	 7 8 9,
+	100	 10,
+	100	 7 8 9 10,
+	100	 11,
+	100	 12,
+	100	 11 12,
+	100	 13,
+	100	 14,
+	100	 15,
+	100	 14 15,
+	100	 13 14 15,
+	100	 11 12 13 14 15,
+	100	 1 2 3 4 5 6,
+	100	 1 2 3 4 5,
+	100	 1 2 3 4,
+	100	 1 2 3,
+	100	 1,
+;
+END; [Splits]
+

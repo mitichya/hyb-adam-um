@@ -1,0 +1,19 @@
+Hyb-Adam-UM optimizer log
+{"epochs": 5000, "print_every": 500, "lr_init": 0.02, "lr_milestones": [700, 2000, 4000], "lr_factor": 0.5, "lr_min": 0.0001, "sched_patience_blocks": 7, "weight_decay": 0.0, "clip_grad_norm": 5.0, "h_central_diff": 1e-05, "beta1": 0.9, "beta2": 0.999, "adam_eps": 1e-08, "seed_hyb": 42, "init_strategy": "two_way_mean", "n_restarts": 1, "restart_jitter_scale": 0.03, "max_distance_factor": 1.5, "normalize_objective_by_triplets": true, "convergence_rel_tol": 1e-07, "convergence_patience_checks": 5, "early_stop": false}
+Initial strategy=two_way_mean; restarts=1; upper_bound=0.23108477666362798; optimized_variables=89; normalize_objective_by_triplets=True
+Restart 0: initial Delta=36.181450; objective_for_grad=0.07951967
+Restart 0, epoch     1 | Delta=76.533188 | best Delta=36.181450 | obj=0.16820481 | lr=0.02
+Restart 0, epoch   500 | Delta=12.563620 | best Delta=12.563620 | obj=0.027612351 | lr=0.02
+Restart 0, epoch 00700: lr milestone 0.02 -> 0.01
+Restart 0, epoch  1000 | Delta=6.246536 | best Delta=6.246536 | obj=0.013728651 | lr=0.01
+Restart 0, epoch  1500 | Delta=6.042317 | best Delta=6.042317 | obj=0.013279817 | lr=0.01
+Restart 0, epoch 02000: lr milestone 0.01 -> 0.005
+Restart 0, epoch  2000 | Delta=7.528545 | best Delta=6.042317 | obj=0.016546254 | lr=0.005
+Restart 0, epoch  2500 | Delta=3.475585 | best Delta=3.475585 | obj=0.0076386485 | lr=0.005
+Restart 0, epoch  3000 | Delta=3.680429 | best Delta=3.475585 | obj=0.0080888558 | lr=0.005
+Restart 0, epoch  3500 | Delta=3.437351 | best Delta=3.437351 | obj=0.0075546186 | lr=0.005
+Restart 0, epoch 04000: lr milestone 0.005 -> 0.0025
+Restart 0, epoch  4000 | Delta=3.677789 | best Delta=3.437351 | obj=0.0080830535 | lr=0.0025
+Restart 0, epoch  4500 | Delta=2.257300 | best Delta=2.257300 | obj=0.0049610998 | lr=0.0025
+Restart 0, epoch  5000 | Delta=2.330784 | best Delta=2.257300 | obj=0.0051226031 | lr=0.0025
+Selected restart 0 with final Delta=2.257300; reduction=93.761167%; best_epoch=4500; epochs_used=5000; final_lr=0.0025

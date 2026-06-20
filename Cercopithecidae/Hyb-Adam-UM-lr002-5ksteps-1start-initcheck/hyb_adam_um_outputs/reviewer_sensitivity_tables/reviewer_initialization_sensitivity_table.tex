@@ -1,0 +1,30 @@
+\begin{table}[t]
+\centering
+\caption{Initialization sensitivity of Hyb-Adam-UM under fixed missing-entry masks. The baseline initialization is the row/column mean strategy used in the main experiments. Only the initialization of the missing entries is changed; the objective, optimizer settings, finite-difference step, clipping threshold, restart count, and number of epochs are kept fixed. Matrix errors are computed only on artificially hidden entries. Values are mean $\pm$ standard deviation over fixed masks per missingness level. RMSE and MAE are reported as $\times 10^{-2}$.}
+\label{tab:hyb_initialization_sensitivity}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llccccc}
+\toprule
+Missingness & Initialization & RMSE$_{\rm miss}$ ($\times 10^{-2}$) & MAE$_{\rm miss}$ ($\times 10^{-2}$) & Final $\Delta$ & Time (s) & Success \\
+\midrule
+30\% & Observed mean & 2.01 $\pm$ 1.42 & 0.91 $\pm$ 0.73 & 48.31 $\pm$ 10.21 & 23.03 $\pm$ 0.07 & 5/5 \\
+30\% & Observed median & 1.86 $\pm$ 1.49 & 0.84 $\pm$ 0.77 & 42.49 $\pm$ 9.81 & 22.69 $\pm$ 0.17 & 5/5 \\
+30\% & Baseline: row/column mean & 1.54 $\pm$ 1.00 & 0.61 $\pm$ 0.37 & 41.81 $\pm$ 11.98 & 22.58 $\pm$ 0.09 & 5/5 \\
+30\% & Random observed range & 1.40 $\pm$ 0.86 & 0.53 $\pm$ 0.29 & 39.59 $\pm$ 9.78 & 22.26 $\pm$ 0.10 & 5/5 \\
+50\% & Observed mean & 2.13 $\pm$ 1.04 & 0.88 $\pm$ 0.47 & 30.74 $\pm$ 8.91 & 37.11 $\pm$ 0.05 & 5/5 \\
+50\% & Observed median & 2.24 $\pm$ 1.00 & 0.94 $\pm$ 0.42 & 32.36 $\pm$ 8.61 & 36.95 $\pm$ 0.09 & 5/5 \\
+50\% & Baseline: row/column mean & 1.34 $\pm$ 0.74 & 0.51 $\pm$ 0.21 & 25.74 $\pm$ 3.48 & 36.38 $\pm$ 0.18 & 5/5 \\
+50\% & Random observed range & 1.91 $\pm$ 0.75 & 0.76 $\pm$ 0.28 & 30.37 $\pm$ 8.28 & 36.15 $\pm$ 0.45 & 5/5 \\
+65\% & Observed mean & 2.26 $\pm$ 1.48 & 1.08 $\pm$ 0.64 & 18.52 $\pm$ 2.49 & 48.03 $\pm$ 0.27 & 5/5 \\
+65\% & Observed median & 1.56 $\pm$ 1.04 & 0.69 $\pm$ 0.46 & 17.23 $\pm$ 2.41 & 48.42 $\pm$ 0.22 & 5/5 \\
+65\% & Baseline: row/column mean & 1.56 $\pm$ 1.04 & 0.69 $\pm$ 0.46 & 17.27 $\pm$ 2.67 & 47.33 $\pm$ 0.14 & 5/5 \\
+65\% & Random observed range & 1.84 $\pm$ 1.27 & 0.85 $\pm$ 0.55 & 16.83 $\pm$ 2.06 & 47.70 $\pm$ 0.33 & 5/5 \\
+85\% & Observed mean & 4.14 $\pm$ 0.78 & 2.44 $\pm$ 0.69 & 4.09 $\pm$ 2.01 & 62.43 $\pm$ 0.47 & 5/5 \\
+85\% & Observed median & 4.07 $\pm$ 0.78 & 2.39 $\pm$ 0.65 & 4.71 $\pm$ 2.32 & 61.98 $\pm$ 0.28 & 5/5 \\
+85\% & Baseline: row/column mean & 4.16 $\pm$ 0.80 & 2.45 $\pm$ 0.70 & 4.10 $\pm$ 1.93 & 61.50 $\pm$ 0.40 & 5/5 \\
+85\% & Random observed range & 3.99 $\pm$ 0.79 & 2.27 $\pm$ 0.65 & 4.72 $\pm$ 2.60 & 61.62 $\pm$ 0.26 & 5/5 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

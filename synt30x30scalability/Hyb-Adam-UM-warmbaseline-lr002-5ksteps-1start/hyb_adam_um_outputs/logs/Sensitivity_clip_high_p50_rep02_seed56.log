@@ -1,0 +1,19 @@
+Hyb-Adam-UM optimizer log
+{"epochs": 5000, "print_every": 500, "lr_init": 0.02, "lr_milestones": [700, 2000, 4000], "lr_factor": 0.5, "lr_min": 0.0001, "sched_patience_blocks": 7, "weight_decay": 0.0, "clip_grad_norm": 10.0, "h_central_diff": 1e-05, "beta1": 0.9, "beta2": 0.999, "adam_eps": 1e-08, "seed_hyb": 42, "init_strategy": "two_way_mean", "n_restarts": 1, "restart_jitter_scale": 0.03, "max_distance_factor": 1.5, "normalize_objective_by_triplets": true, "convergence_rel_tol": 1e-07, "convergence_patience_checks": 5, "early_stop": false}
+Initial strategy=two_way_mean; restarts=1; upper_bound=0.35010973558235414; optimized_variables=218; normalize_objective_by_triplets=True
+Restart 0: initial Delta=1310.565469; objective_for_grad=0.32279938
+Restart 0, epoch     1 | Delta=1274.084905 | best Delta=1274.084905 | obj=0.31381402 | lr=0.02
+Restart 0, epoch   500 | Delta=679.797414 | best Delta=679.797414 | obj=0.16743779 | lr=0.02
+Restart 0, epoch 00700: lr milestone 0.02 -> 0.01
+Restart 0, epoch  1000 | Delta=665.112782 | best Delta=665.112782 | obj=0.16382088 | lr=0.01
+Restart 0, epoch  1500 | Delta=662.931360 | best Delta=662.931360 | obj=0.16328359 | lr=0.01
+Restart 0, epoch 02000: lr milestone 0.01 -> 0.005
+Restart 0, epoch  2000 | Delta=663.443109 | best Delta=662.931360 | obj=0.16340963 | lr=0.005
+Restart 0, epoch  2500 | Delta=648.711048 | best Delta=648.711048 | obj=0.15978105 | lr=0.005
+Restart 0, epoch  3000 | Delta=652.203960 | best Delta=648.711048 | obj=0.16064137 | lr=0.005
+Restart 0, epoch  3500 | Delta=652.057335 | best Delta=648.711048 | obj=0.16060525 | lr=0.005
+Restart 0, epoch 04000: lr milestone 0.005 -> 0.0025
+Restart 0, epoch  4000 | Delta=650.618992 | best Delta=648.711048 | obj=0.16025098 | lr=0.0025
+Restart 0, epoch  4500 | Delta=645.316495 | best Delta=645.316495 | obj=0.15894495 | lr=0.0025
+Restart 0, epoch  5000 | Delta=645.198900 | best Delta=645.198900 | obj=0.15891599 | lr=0.0025
+Selected restart 0 with final Delta=645.198900; reduction=50.769426%; best_epoch=5000; epochs_used=5000; final_lr=0.0025

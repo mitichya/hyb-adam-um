@@ -1,0 +1,21 @@
+Hyb-Adam-UM optimizer log
+{"epochs": 5000, "print_every": 500, "lr_init": 0.04, "lr_milestones": [700, 2000, 4000], "lr_factor": 0.5, "lr_min": 0.0001, "sched_patience_blocks": 7, "weight_decay": 0.0, "clip_grad_norm": 5.0, "h_central_diff": 1e-05, "beta1": 0.9, "beta2": 0.999, "adam_eps": 1e-08, "seed_hyb": 42, "init_strategy": "two_way_mean", "n_restarts": 1, "restart_jitter_scale": 0.03, "max_distance_factor": 1.5, "normalize_objective_by_triplets": true, "convergence_rel_tol": 1e-07, "convergence_patience_checks": 5, "early_stop": false}
+Initial strategy=two_way_mean; restarts=1; upper_bound=0.375; optimized_variables=218; normalize_objective_by_triplets=True
+Restart 0: initial Delta=1600.008757; objective_for_grad=0.39409083
+Restart 0, epoch     1 | Delta=2595.039090 | best Delta=1600.008757 | obj=0.63917219 | lr=0.04
+Restart 0, epoch   500 | Delta=7225.725296 | best Delta=1600.008757 | obj=1.7797353 | lr=0.04
+Restart 0, epoch 00700: lr milestone 0.04 -> 0.02
+Restart 0, epoch  1000 | Delta=924.562035 | best Delta=924.562035 | obj=0.22772464 | lr=0.02
+Restart 0, epoch  1500 | Delta=928.062719 | best Delta=924.562035 | obj=0.22858688 | lr=0.02
+Restart 0, epoch 02000: lr milestone 0.02 -> 0.01
+Restart 0, epoch  2000 | Delta=932.355167 | best Delta=924.562035 | obj=0.22964413 | lr=0.01
+Restart 0, epoch  2500 | Delta=927.459725 | best Delta=924.562035 | obj=0.22843836 | lr=0.01
+Restart 0, epoch  3000 | Delta=928.106347 | best Delta=924.562035 | obj=0.22859762 | lr=0.01
+Restart 0, epoch  3500 | Delta=928.572578 | best Delta=924.562035 | obj=0.22871246 | lr=0.01
+Restart 0: convergence detected at epoch 3500
+Restart 0, epoch 04000: lr milestone 0.01 -> 0.005
+Restart 0, epoch  4000 | Delta=931.270345 | best Delta=924.562035 | obj=0.22937693 | lr=0.005
+Restart 0, epoch  4500 | Delta=924.930889 | best Delta=924.562035 | obj=0.22781549 | lr=0.005
+Restart 0, epoch 04500: lr plateau 0.005 -> 0.0025
+Restart 0, epoch  5000 | Delta=922.212717 | best Delta=922.212717 | obj=0.22714599 | lr=0.0025
+Selected restart 0 with final Delta=922.212717; reduction=42.362021%; best_epoch=5000; epochs_used=5000; final_lr=0.0025

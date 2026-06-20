@@ -1,0 +1,16 @@
+T_label,full_label,species,accession,group,original_id,original_description,sequence_length_raw
+T1,Homo_sapiens_NC_012920,Homo_sapiens,NC_012920,Hominoidea,NC_012920.1,"NC_012920.1 Homo sapiens mitochondrion, complete genome",16569
+T2,Pan_troglodytes_NC_001643,Pan_troglodytes,NC_001643,Hominoidea,NC_001643.1,"NC_001643.1 Pan troglodytes mitochondrion, complete genome",16554
+T3,Pan_paniscus_NC_001644,Pan_paniscus,NC_001644,Hominoidea,NC_001644.1,"NC_001644.1 Pan paniscus mitochondrion, complete genome",16563
+T4,Gorilla_gorilla_D38114,Gorilla_gorilla,D38114,Hominoidea,D38114.1,"D38114.1 Gorilla gorilla mitochondrial DNA, complete genome",16364
+T5,Pongo_abelii_NC_002083,Pongo_abelii,NC_002083,Hominoidea,NC_002083.1,"NC_002083.1 Pongo abelii mitochondrion, complete genome",16499
+T6,Hylobates_lar_NC_002082,Hylobates_lar,NC_002082,Hominoidea,NC_002082.1,"NC_002082.1 Hylobates lar mitochondrion, complete genome",16472
+T7,Macaca_mulatta_NC_005943,Macaca_mulatta,NC_005943,Old_World_monkeys,NC_005943.1,"NC_005943.1 Macaca mulatta mitochondrion, complete genome",16564
+T8,Papio_hamadryas_NC_001992,Papio_hamadryas,NC_001992,Old_World_monkeys,NC_001992.1,"NC_001992.1 Papio hamadryas mitochondrion, complete genome",16521
+T9,Chlorocebus_aethiops_NC_007009,Chlorocebus_aethiops,NC_007009,Old_World_monkeys,NC_007009.1,"NC_007009.1 Chlorocebus aethiops mitochondrion, complete genome",16389
+T10,Colobus_guereza_NC_006901,Colobus_guereza,NC_006901,Old_World_monkeys,NC_006901.1,"NC_006901.1 Colobus guereza mitochondrion, complete genome",16648
+T11,Cebus_albifrons_NC_002763,Cebus_albifrons,NC_002763,New_World_monkeys,NC_002763.1,"NC_002763.1 Cebus albifrons mitochondrion, complete genome",16554
+T12,Callithrix_jacchus_KM588314,Callithrix_jacchus,KM588314,New_World_monkeys,KM588314.1,"KM588314.1 Callithrix jacchus mitochondrion, complete genome",16499
+T13,Tarsius_bancanus_NC_002811,Tarsius_bancanus,NC_002811,Tarsiiformes,NC_002811.1,"NC_002811.1 Tarsius bancanus mitochondrion, complete genome",16927
+T14,Nycticebus_coucang_NC_002765,Nycticebus_coucang,NC_002765,Strepsirrhini,NC_002765.1,"NC_002765.1 Nycticebus coucang mitochondrion, complete genome",16764
+T15,Lemur_catta_NC_004025,Lemur_catta,NC_004025,Strepsirrhini,NC_004025.1,"NC_004025.1 Lemur catta mitochondrion, complete genome",17036
